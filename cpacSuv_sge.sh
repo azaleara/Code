@@ -16,7 +16,7 @@
 
 module add singularity/2.2
 ## sudo chmod 777 /mnt
-mkdir -p /mnt/MD1200A/fbarrios/cpac_cluster_files/log/reports
+mkdir -p /mnt/MD1200A/fbarrios/areyes/cpac_cluster_files/log/reports
 
 sge_ndx=$(( SGE_TASK_ID - 1 ))
 
@@ -29,5 +29,5 @@ singularity run -B /mnt:/mnt  \
   --pipeline_file /mnt/MD1200A/fbarrios/cpac_rsConRDC/pipeline_config_FAB.yml \
   --data_config_file /mnt/MD1200A/fbarrios/cpac_rsConRDC/cpac_data_config_20161104231240.yml \
   /mnt/MD1200A/fbarrios/rsConRDC/ \
-  /mnt/MD1200A/fbarrios/cpac_rsConRDC/outputs_FAB/ \
+  /mnt/MD1200A/fbarrios/areyes/cpac_rsConRDC/outputs_FAB/ \
   participant --participant_ndx ${sge_ndx} 
