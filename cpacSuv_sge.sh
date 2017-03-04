@@ -28,6 +28,6 @@ singularity run -B /mnt:/mnt  \
   --n_cpus 8 --mem 16 \
   --pipeline_file /mnt/MD1200A/fbarrios/areyes/cpacBIDS/pipeline_config_cpacBIDS.yml \
   --data_config_file /mnt/MD1200A/fbarrios/areyes/cpacBIDS/data_config_list_rsBas.yaml \
-  /mnt/MD1200A/fbarrios/BIDS_PsyRes/ \
+  /mnt/MD1200A/fbarrios/BIDS/BIDS_PsyRes/ \
   /mnt/MD1200A/fbarrios/areyes/cpacBIDS/outputDir/ \
   participant --participant_ndx ${sge_ndx} 
